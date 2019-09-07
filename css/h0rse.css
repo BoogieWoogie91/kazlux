@@ -1,0 +1,221 @@
+
+.btncontacts {
+	background-color: #8dc740;
+    position: relative;
+    color: #ffffff !important;
+    font-size: 2.5vh !important;
+    line-height: 4.5vh;
+    margin: 8vh auto 0;
+    padding: 10px 30px 10px 30px;
+    display: table;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #8dc740;
+    border-radius: 34px 34px;
+    color: #ffffff;
+    font-size: 1.6em;
+    border: none;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.feedback {
+
+}
+
+.feedback h1 {
+	text-align: center;
+	width: 90%;
+	margin: auto;
+}
+
+.feedback input {
+	overflow: visible;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #cecece;
+    border-radius: 0 0;
+    padding-left: 0;
+    outline:none;
+    width: 100%;
+    margin: 3% auto;
+}
+
+.feedback input::placeholder {
+font-size: 0.8em;
+}
+
+.logobox img {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    width: 118px;
+    height: 40px;
+}
+
+button.closeh {
+    font-size: 3em !important;
+    text-shadow: none !important;
+    padding: 0 !important;
+    margin: -5px 10px 0 auto !important;
+    outline: none !important;
+    color: #fff !important;
+    opacity: 1 !important;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+    }
+
+
+/**************************************************************************************************************************Jumbo Styling**/
+
+
+.jumboFirst {
+    background: url("../img/jumboBackground.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+.jumboFirst h1 {
+    color: black;
+}
+
+.jumboFirst p {
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 40px;
+}
+
+.jumboFirst .block_inner .button_wrap {
+    width: 170px;
+}
+
+.jumboFirst .block_inner .button_wrap button {
+    background-color: #8dc740;
+    border: #8dc740 solid 2px;
+}
+
+.jumboFirst .block_inner .button_wrap .BW {
+    border: black solid 2px;
+    background-color: #fff;
+    color: black;
+}
+
+.jumboSecond {
+}
+
+.jumboSecond .fp-tableCell {
+    vertical-align: middle !important;
+}
+
+#firstOne {
+    margin-top: 9vh;
+}
+
+.jumboSecond h5 {
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.35em;
+    letter-spacing: 0.05em;
+    margin-top: 3vh;
+}
+
+.jumboSecond p {
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+    font-size: 0.85em;
+    color: #7a7a7a;
+    max-width: 310px;
+    min-width: 250px;
+    margin: 0 auto;
+}
+
+
+.jumboThird {
+    background: url("../img/street elemnts lower.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.fillerDiv {
+    height: 200px;
+}
+
+.secZone {
+	position: static;
+    height: 40vh !important;
+    width: 97vw !important;
+}
+.buttonCont {
+    display: block;
+    /* width: 33px; */
+    /* height: 180px; */
+    margin-left: 96px !important;
+
+    }
+
+    .buttonCont button {
+    width: 33px;
+    height: 33px;
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    opacity: 0.5;
+    outline: none !important;
+    padding: 0;
+}
+
+.carousel-item1 .imgWrap {
+    height: 463px;
+    width: 260px;
+    margin: 0 auto;
+}
+
+.carousel-item1 img {
+    position: static;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item1 h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.carousel-item1 p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    font-size: 1em;
+    text-align: center;
+    color: #989898;
+    margin-bottom: 15px;
+}
+.new {
+	margin: auto !important;
+	text-align: center;
+}
+/**************************************************************************************************************************Jumbo Styling**/

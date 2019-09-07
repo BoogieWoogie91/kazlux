@@ -1,0 +1,160 @@
+<div class='content'>
+
+    <div class='row top row justify-content-between'> <!--Top Row With Logo and Navbar-->
+        <div class='col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 logoBox'><!--Logo Column-->
+            <img class='logoImg' src='img/logo.png' alt="logo">
+        </div><!--Logo Column Ending-->
+
+        <div class='col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 navbarColumn'>
+            <ul class="navbarColumnInner">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Доставка</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cпособы оплаты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Связаться с нами</a>
+                </li>
+            </ul>
+        </div>
+    </div><!--Top Row With Logo and Navbar Ending-->
+
+    <div class ='row rowShopNavbar' id="rowTobeHidden">
+        <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 phones shopNavbar'>
+            <p>Телефоны</p>
+            <img src='img/phoneicon.png' alt="phone">
+        </div>
+
+        <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 beauty shopNavbar'>
+            <p>Красота и здоровье</p>
+            <img src='img/makeupicon.png' alt="makeup">
+        </div>
+
+        <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 bags shopNavbar'>
+            <p>Рюкзаки,<br> сумки</p>
+            <img src='img/briefcaseicon.png' alt="briefcase">
+        </div>
+
+        <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 accessories shopNavbar'>
+            <p>Часы и <br> аксессуары</p>
+            <img src='img/wristwatchicon.png' alt="watch">
+        </div>
+
+        <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 kids shopNavbar'>
+            <p>Для детей</p>
+            <img src='img/baby-boyicon.png' alt="baby">
+        </div>
+
+        <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 misc shopNavbar'>
+            <p>Разное</p>
+            <img src='img/umbrellaicon.png' alt="umbrella">
+        </div>
+    </div>
+
+
+    <!--THE NEXT STUFF SUPPOSED TO SHOW ON SMALL SCREENS-->
+    <div class='navbarForSmall' id='hiddenNavBar'>
+        <img class ='mobileLogoImg' src='img/logo_lux.svg' alt="logo">
+        <button class="navbarToggleForSmall" onclick="toggle_visibility('hiddenNavBar'); toggle_visibility('hiddenNavBar1'); toggle_visibility('hidden');">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars mobileBurger"></i></span>
+        </button>
+
+        <div class='blueNavbar' id='hiddenNavBar1'>
+            <img src='img/logo_lux_white.svg' alt="logo">
+            <button class="navbarToggleForSmallBlue" onclick="toggle_visibility('hidden'); toggle_visibility('hiddenNavBar1'); toggle_visibility('hiddenNavBar');">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars mobileBurgerBlue"></i></span>
+            </button>
+        </div>
+
+        <ul class="accordion" id='hidden'>
+            <li><div class="trigger">
+                <input type="checkbox" id="checkbox-1" name="checkbox-1" />
+                <label for="checkbox-1" class="checkbox">
+                    <img class ='phoneImg' src='img/smartphone-call.svg' alt="phone">
+                    Телефоны
+                </label>
+            </div></li>
+
+            <li><div class="trigger">
+                <input type="checkbox" id="checkbox-2" name="checkbox-2" />
+                <label for="checkbox-2" class="checkbox">
+                    <img class ='beautyImg' src='img/cosmetics.svg' alt="cosmetics">
+                    Красота и здоровье
+                </label>
+            </div></li>
+
+            <li><div class="trigger">
+                <input type="checkbox" id="checkbox-3" name="checkbox-3" />
+                <label for="checkbox-3" class="checkbox">
+                    <img class ='bagsImg' src='img/working-briefcase.svg' alt="briefcase">
+                    Рюкзаки, сумки
+                </label>
+            </div></li>
+
+            <li><div class="trigger">
+                <input type="checkbox" id="checkbox-4" name="checkbox-3" />
+                <label for="checkbox-4" class="checkbox">
+                    <img class ='accessoriesImg' src='img/wristwatch.svg' alt="watch">
+                    Часы и аксессуары
+                </label>
+            </div></li>
+
+            <li><div class="trigger">
+                <input type="checkbox" id="checkbox-5" name="checkbox-3" />
+                <label for="checkbox-5" class="checkbox">
+                    <img class ='kidsImg' src='img/baby-boy.svg' alt="baby">
+                    Для детей
+                </label>
+            </div></li>
+
+            <li><div class="trigger">
+                <input type="checkbox" id="checkbox-6" name="checkbox-3" />
+                <label for="checkbox-6" class="checkbox">
+                    <img class ='miscImg' src='img/insurance.svg' alt="umbrella">
+                    Разное
+                </label>
+            </div></li>
+        </ul>
+
+    </div>
+</div>
+<div class="fixedNavContainer" id="rowTobeFixed">
+    <div class ='row rowShopNavbarFIxed'>
+        <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 phonesFixed shopNavbarFixed'>
+            <p>Телефоны</p>
+            <img src='img/iconphoneforfixed.png' alt="phoneimg">
+        </div>
+
+        <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 beautyFixed shopNavbarFixed'>
+            <p>Красота и здоровье</p>
+            <img src='img/makeupforfixed.png' alt="makeupimg">
+        </div>
+
+        <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 bagsFixed  shopNavbarFixed'>
+            <p>Рюкзаки,<br> сумки</p>
+            <img src='img/briefcaseforfixed.png' alt="briefcaseimg">
+        </div>
+
+        <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 accessoriesFixed  shopNavbarFixed'>
+            <p>Часы и <br> аксессуары</p>
+            <img src='img/wristwatchforfixed.png' alt="watchimg">
+        </div>
+
+        <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 kidsFixed  shopNavbarFixed'>
+            <p>Для детей</p>
+            <img src='img/baby-boyforfixed.png' alt="babyimg">
+        </div>
+
+        <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 miscFixed  shopNavbarFixed'>
+            <p>Разное</p>
+            <img src='img/umbrellaforfixed.png' alt="umbrellaimg">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--EBANNYI SLICK-->

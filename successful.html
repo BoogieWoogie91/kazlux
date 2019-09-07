@@ -1,0 +1,3287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '236213920406205');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=236213920406205&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+    <title>Luxury Shop</title>
+  </head>
+
+  <body>
+    <div class='content'>
+
+      <div class='content'>
+
+        <div class='row top row justify-content-between'> <!--Top Row With Logo and Navbar-->
+          <div class='col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 logoBox'><!--Logo Column-->
+            <a href='index.html'><img class='logoImg' src='img/logo.png'></a>
+          </div><!--Logo Column Ending-->
+
+        </div><!--Top Row With Logo and Navbar Ending-->
+
+        <div class ='row rowShopNavbar' id="rowTobeHidden">
+          <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 phones shopNavbar'>
+            <a href="index_phones.html">
+            <p>Телефоны</p>
+            <img src='img/phoneicon.png'>
+          </a>
+          </div>
+
+          <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 beauty shopNavbar'>
+            <a href='index_beauty.html'>
+            <p>Красота и здоровье</p>
+            <img src='img/makeupicon.png'>
+          </a>
+          </div>
+
+          <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 bags shopNavbar'>
+            <a href='index_bags.html'>
+            <p>Рюкзаки,<br> сумки</p>
+            <img src='img/briefcaseicon.png'>
+          </a>
+          </div>
+
+          <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 accessories shopNavbar'>
+            <a href='index_watch.html'>
+            <p>Часы и <br> аксессуары</p>
+            <img src='img/wristwatchicon.png'>
+          </a>
+          </div>
+
+          <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 kids shopNavbar'>
+            <a href='index_kids.html'>
+            <p>Для детей</p>
+            <img src='img/baby-boyicon.png'>
+          </a>
+          </div>
+
+          <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 misc shopNavbar'>
+            <a href='index_misc.html'>
+            <p>Разное</p>
+            <img src='img/umbrellaicon.png'>
+          </a>
+          </div>
+        </div>
+
+
+        <!-------------------------------------------------------------------------THE NEXT STUFF SUPPOSED TO SHOW ON SMALL SCREENS-------------------------------------------------------->
+        <div class='navbarForSmall' id='hiddenNavBar'>
+          <a href='index.html'><img class ='mobileLogoImg' src='img/logo_lux.svg'></a>
+          <button class="navbarToggleForSmall" onclick="toggle_visibility('hiddenNavBar'); toggle_visibility('hiddenNavBar1'); toggle_visibility('hidden');">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars mobileBurger"></i></span>
+          </button>
+
+          <div class='blueNavbar' id='hiddenNavBar1'>
+            <img src='img/logo_lux_white.svg'>
+            <button class="navbarToggleForSmallBlue" onclick="toggle_visibility('hidden'); toggle_visibility('hiddenNavBar1'); toggle_visibility('hiddenNavBar');">
+              <span class="navbar-toggler-icon"><i class="fas fa-bars mobileBurgerBlue"></i></span>
+            </button>
+          </div>
+
+          <ul class="accordion" id='hidden'>
+            <li><div class="trigger">
+              <input type="checkbox" id="checkbox-1" name="checkbox-1" />
+              <label for="checkbox-1" class="checkbox"><a href='index_phones.html'>
+                <img class ='phoneImg' src='img/smartphone-call.svg'>
+                Телефоны</a>
+              </label>
+            </div></li>
+
+            <li><div class="trigger">
+              <input type="checkbox" id="checkbox-2" name="checkbox-2" />
+              <label for="checkbox-2" class="checkbox"><a href='index_beauty.html'>
+                <img class ='beautyImg' src='img/cosmetics.svg'>
+                Красота и здоровье</a>
+              </label>
+            </div></li>
+
+            <li><div class="trigger">
+              <input type="checkbox" id="checkbox-3" name="checkbox-3" />
+              <label for="checkbox-3" class="checkbox"><a href='index_bags.html'>
+                <img class ='bagsImg' src='img/working-briefcase.svg'>
+                Рюкзаки, сумки</a>
+              </label>
+            </div></li>
+
+            <li><div class="trigger">
+              <input type="checkbox" id="checkbox-4" name="checkbox-3" />
+              <label for="checkbox-4" class="checkbox"><a href='index_watch.html'>
+                <img class ='accessoriesImg' src='img/wristwatch.svg'>
+                Часы и аксессуары</a>
+              </label>
+            </div></li>
+
+            <li><div class="trigger">
+              <input type="checkbox" id="checkbox-5" name="checkbox-3" />
+              <label for="checkbox-5" class="checkbox"><a href='index_kids.html'>
+                <img class ='kidsImg' src='img/baby-boy.svg'>
+                Для детей</a>
+              </label>
+            </div></li>
+
+            <li><div class="trigger">
+              <input type="checkbox" id="checkbox-6" name="checkbox-3" />
+              <label for="checkbox-6" class="checkbox"><a href='index_misc.html'>
+                <img class ='miscImg' src='img/insurance.svg'>
+                Разное</a>
+              </label>
+            </div></li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="fixedNavContainer" id="rowTobeFixed">
+        <div class ='row rowShopNavbarFIxed'>
+          <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 phonesFixed shopNavbarFixed'>
+           <a href='index_phones.html'><p>Телефоны</p></a>
+            <img src='img/iconphoneforfixed.png'>
+          </div>
+          <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 beautyFixed shopNavbarFixed'>
+            <a href='index_beauty.html'><p>Красота и здоровье</p></a>
+            <img src='img/makeupforfixed.png'>
+          </div>
+
+          <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 bagsFixed  shopNavbarFixed'>
+            <a href='index_bags.html'><p>Рюкзаки,<br> сумки</p></a>
+            <img src='img/briefcaseforfixed.png'>
+          </div>
+
+          <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 accessoriesFixed  shopNavbarFixed'>
+            <a href='index_watch.html'><p>Часы и <br> аксессуары</p></a>
+            <img src='img/wristwatchforfixed.png'>
+          </div>
+
+          <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 kidsFixed  shopNavbarFixed'>
+            <a href='index_kids.html'><p>Для детей</p></a>
+            <img src='img/baby-boyforfixed.png'>
+          </div>
+
+          <div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 miscFixed  shopNavbarFixed'>
+            <a href='index_misc.html'><p>Разное</p></a>
+            <img src='img/umbrellaforfixed.png'>
+          </div>
+        </div>
+      </div>
+
+
+
+<!-------------------------------------------------------------------THE SMALL SCREEN NAV ENDING-------------------------------------------------------->
+
+    <div class='successful' id="successful">
+     <h1 style="padding-top: 65px;">Спасибо! Ваш заказ принят.</h1>
+     <p style="text-align:  center;">Наш оператор свяжется с вами в ближайшее время для подтверждения заказа.</p>
+     <p  style="text-align:  center;">Если вы ошиблись при заполнени формы, то, пожалуйста, <a style="color: #1b9bab; text-decoration: underline !important;" href="javascript: history.back(-1);">заполните заявку еще раз</a>
+    </div>
+
+    <div class='eightPositions'>
+      <div class='position-1 position'>
+        <h5><a id='subHeader' href='galaxys8.php'><span class='bold'>Samsung Galaxy S8</span></a></h5>
+        <a href='index_phones.html'>Телефоны</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>
+            	<p class='newPrice'>34900 тг.</p>
+              <p class='oldPrice'>74260 тг.</p>              
+            </div>
+          </div>
+        <a id='subHeader' href='galaxys8.php'><img src='img/position1phone.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Самый популярный мобильный телефон в мире</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus()"></button>
+          <div class='counter' id='counter'>0</div>
+          <button class='plus' onclick="plus()"></button>          
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-2 position'>
+        <h5><a id='subHeader' href='landroverhope.php'><span class='bold'>LAND ROVER hope</span></a></h5>
+        <a href='index_phones.html'>Телефоны</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>19990 тг.</p>
+              <p class='oldPrice'>42345 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='landroverhope.php'><img src='img/position2phone.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Закажи свой Land Rover Hope в нашем магазине</span></p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus1()"></button>
+          <div class='counter' id='counter1'>0</div>
+          <button class='plus' onclick="plus1()"></button>          
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-3 position'>
+        <h5><a id='subHeader' href='landroverflixx9.php'><span class='bold'>Land Rover Flip X9</span></a></h5>
+        <a href='index_phones.html'>Телефоны</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>29900 тг.</p>
+              <p class='oldPrice'>63620 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='landroverflixx9.php'><img src='img/position3phone.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Защищённый телефон с усиленным аккумулятором</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus2()"></button>
+          <div class='counter' id='counter2'>0</div>
+          <button class='plus' onclick="plus2()"></button>            
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-4 position'>
+        <h5><a id='subHeader' href='galaxys7.php'><span class='bold'>Samsung Galaxy S7</span></a></h5>
+        <a href='index_phones.html'>Телефоны</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>29900 тг.</p>
+              <p class='oldPrice'>59800 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='galaxys7.php'><img class='indexPagecards' src='img/s7slider2.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>С логотипами Samsung на корпусе сзади.</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus3()"></button>
+          <div class='counter' id='counter3'>0</div>
+          <button class='plus' onclick="plus3()"></button>             
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-5 position'>
+        <h5><a id='subHeader' href='iphonex.php'><span class='bold'>Iphone X</span></a></h5>
+        <a href='index_phones.html'>Телефоны</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>34900 тг.</p>
+              <p class='oldPrice'>73300 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='iphonex.php'><img class='indexPagecards' src='img/iphonex2.jpg'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Apple iPhone X – полная реплика оригинала</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus4()"></button>
+          <div class='counter' id='counter4'>0</div>
+          <button class='plus' onclick="plus4()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-6 position'>
+        <h5><a id='subHeader' href='iphone7.php'><span class='bold'>Iphone 7</span></a></h5>
+        <a href='index_phones.html'>Телефоны</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>29900 тг.</p>
+              <p class='oldPrice'>63620 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='iphone7.php'><img class='indexPagecards' src='img/iphone7slider3.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>iPhone 7 (копия) не имеет равных по популярности!</span></p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus5()"></button>
+          <div class='counter' id='counter5'>0</div>
+          <button class='plus' onclick="plus5()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-7 position'>
+        <h5><a id='subHeader' href='iphone6.php'><span class='bold'>Iphone 6</span></a></h5>
+        <a href='index_phones.html'>Телефоны</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>29900 тг.</p>
+              <p class='oldPrice'>59800 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='iphone6.php'><img class='indexPagecards' src='img/iphone6slider2.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>iPhone 6s (копия),  имеет восхитительный внешний вид.</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus6()"></button>
+          <div class='counter' id='counter6'>0</div>
+          <button class='plus' onclick="plus6()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-8 position'>
+        <h5><a id='subHeader' href='nokia6700.php'><span class='bold'>Nokia 6700</span></a></h5>
+        <a href='index_phones.html'>Телефоны</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>19990 тг.</p>
+              <p class='oldPrice'>49975 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='nokia6700.php'><img class='indexPagecards containPls' src='img/phone_1.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Тонкий, легкий и стильный телефон на две SIM-карты.</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus7()"></button>
+          <div class='counter' id='counter7'>0</div>
+          <button class='plus' onclick="plus7()"></button>             
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class='content'>
+
+    <div class='eightPositions theSecondEightPositions'>
+      <div class='position-1 position'>
+        <h5><a id='subHeader' href='tag_space_x.php'><span class='bold'>TAG HEUER SPACE X</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>19900 тг.</p>
+              <p class='oldPrice'>66335 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='tag_space_x.php'><img class='indexPagecards' src='img/space_x_1.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Хронометры этой торговой марки, являются искусством</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus8()"></button>
+          <div class='counter' id='counter8'>0</div>
+          <button class='plus' onclick="plus8()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-2 position'>
+        <h5><a id='subHeader' href='patek_philippe.php'><span class='bold'>Patek Philippe Sky Moon</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>21990 тг.</p>
+              <p class='oldPrice'>73300 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='patek_philippe.php'><img class='indexPagecards' src='img/patekslider1.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Patek Philippe - философия времени Sky Moon Tourbillon</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus9()"></button>
+          <div class='counter' id='counter9'>0</div>
+          <button class='plus' onclick="plus9()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-3 position'>
+        <h5><a id='subHeader' href='diesel_10bar.php'><span class='bold'>DIESEL 10 BAR</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>15900 тг.</p>
+              <p class='oldPrice'>53000 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='diesel_10bar.php'><img class='indexPagecards' src='img/dieselslider1.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Diesel 10 BAR – это классическая модель часов</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus10()"></button>
+          <div class='counter' id='counter10'>0</div>
+          <button class='plus' onclick="plus10()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-4 position'>
+        <h5><a id='subHeader' href='amst.php'><span class='bold'>Amst</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>15900 тг.</p>
+              <p class='oldPrice'>31800 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='amst.php'><img class='indexPagecards' src='img/amstslider1.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Часы Amst - новинка среди ударопрочных часов</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus11()"></button>
+          <div class='counter' id='counter11'>0</div>
+          <button class='plus' onclick="plus11()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-5 position'>
+        <h5><a id='subHeader' href='colMi.php'><span class='bold'>ColMi</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>11900 тг.</p>
+              <p class='oldPrice'>25320 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='colMi.php'><img class='indexPagecards' src='img/colMiSlider_2.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Многофункциональные брендовые умные часы gt08</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus12()"></button>
+          <div class='counter' id='counter12'>0</div>
+          <button class='plus' onclick="plus12()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-6 position'>
+        <h5><a id='subHeader' href='smartwatch007.php'><span class='bold'>Smart Watch SW007</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>19900 тг.</p>
+              <p class='oldPrice'>39800 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='smartwatch007.php'><img class='indexPagecards' src='img/smartwatchslider3.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Инновационные Умные часы с широчайшими возможностями</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus13()"></button>
+          <div class='counter' id='counter13'>0</div>
+          <button class='plus' onclick="plus13()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-7 position'>
+        <h5><a id='subHeader' href='tag.php'><span class='bold'>Tag Carrera RS 2</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>8900 тг.</p>
+              <p class='oldPrice'>29670 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='tag.php'><img class='indexPagecards' src='img/tag1.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Современные и стильные часы мирового бренда</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus14()"></button>
+          <div class='counter' id='counter14'>0</div>
+          <button class='plus' onclick="plus14()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-8 position'>
+        <h5><a id='subHeader' href='curren.php'><span class='bold'>Curren</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>8900 тг.</p>
+              <p class='oldPrice'>17800 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='curren.php'><img class='indexPagecards' src='img/currenslider1.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Стильные наручные часы не оставят равнодушными</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus15()"></button>
+          <div class='counter' id='counter15'>0</div>
+          <button class='plus' onclick="plus15()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class='position-1 position'>
+        <h5><a id='subHeader' href='paneral.php'><span class='bold'>Panerai Luminor</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>8900 тг.</p>
+              <p class='oldPrice'>29670 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='paneral.php'><img class='indexPagecards' src='img/asdadsdsadsasadsadsad.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Подойдут как под классику, так и под стиль casual</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus16()"></button>
+          <div class='counter' id='counter16'>0</div>
+          <button class='plus' onclick="plus16()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-2 position'>
+        <h5><a id='subHeader' href='hublot.php'><span class='bold'>Hublot Geneve</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>8900 тг.</p>
+              <p class='oldPrice'>17800 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='hublot.php'><img class='indexPagecards' src='img/hublot_1.jpg'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Легендарные часы. Комплект для настоящих мужчин</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus17()"></button>
+          <div class='counter' id='counter17'>0</div>
+          <button class='plus' onclick="plus17()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-3 position'>
+        <h5><a id='subHeader' href='ulysse.php'><span class='bold'>Ulysse Nardin</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>8900 тг.</p>
+              <p class='oldPrice'>29670 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='ulysse.php'><img class='indexPagecards' src='img/ulysseslider1.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Часы Ulysse Nardin - олицетворение статуса</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus18()"></button>
+          <div class='counter' id='counter18'>0</div>
+          <button class='plus' onclick="plus18()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-4 position'>
+        <h5><a id='subHeader' href='rolex.php'><span class='bold'>Rolex Oyster Woman</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>8900 тг.</p>
+              <p class='oldPrice'>29670 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='rolex.php'><img class='indexPagecards' src='img/rolexslider3.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Лучшие традиции часового искусства Rolex</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus19()"></button>
+          <div class='counter' id='counter19'>0</div>
+          <button class='plus' onclick="plus19()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-5 position'>
+        <h5><a id='subHeader' href='kors.php'><span class='bold'>Michael Kors</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>8900 тг.</p>
+              <p class='oldPrice'>17800 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='kors.php'><img class='indexPagecards' src='img/korsslider1.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Часы MICHAEL KORS - символ успеха и превосходства в мире!</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus20()"></button>
+          <div class='counter' id='counter20'>0</div>
+          <button class='plus' onclick="plus20()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-6 position'>
+        <h5><a id='subHeader' href='rado_jubile.php'><span class='bold'>Rado "Jubile True"</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>17990 тг.</p>
+              <p class='oldPrice'>35980 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='rado_jubile.php'><img class='indexPagecards' src='img/jubileslider3.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>"Jubile True" – это современный и эстетичный взгляд</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus21()"></button>
+          <div class='counter' id='counter21'>0</div>
+          <button class='plus' onclick="plus21()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-7 position'>
+        <h5><a id='subHeader' href='rado_integral.php'><span class='bold'>Rado Integral</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>17900 тг.</p>
+              <p class='oldPrice'>59670 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='rado_integral.php'><img class='indexPagecards' src='img/sdgsdgsgdgds.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>В современном мире аксессуары имеют ценность.</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus22()"></button>
+          <div class='counter' id='counter22'>0</div>
+          <button class='plus' onclick="plus22()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-8 position'>
+        <h5><a id='subHeader' href='armani.php'><span class='bold'>Часы Emporio Armani</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>16990 тг.</p>
+              <p class='oldPrice'>33980 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='armani.php'><img class='indexPagecards' src='img/watch_1.jpg'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Элитные часы Emporio Armani. Мужское портмоне в подарок</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus23()"></button>
+          <div class='counter' id='counter23'>0</div>
+          <button class='plus' onclick="plus23()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+
+
+
+
+      <div class='position-1 position'>
+        <h5><a id='subHeader' href='hublotandtissot.php'><span class='bold'>Hublot</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>17990 тг.</p>
+              <p class='oldPrice'>59970 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='hublotandtissot.php'><img class='indexPagecards' src='img/hublosotslider3.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Hublot преимущества оценены в разных уголках мира!</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus24()"></button>
+          <div class='counter' id='counter24'>0</div>
+          <button class='plus' onclick="plus24()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-2 position'>
+        <h5><a id='subHeader' href='anncleine.php'><span class='bold'>Anne Klein</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>14900 тг.</p>
+              <p class='oldPrice'>51380 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='anncleine.php'><img class='indexPagecards' src='img/cleineslider2.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Anne klein – воплощение изысканности и элегантности</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus25()"></button>
+          <div class='counter' id='counter25'>0</div>
+          <button class='plus' onclick="plus25()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-3 position'>
+        <h5><a id='subHeader' href='baosaili.php'><span class='bold'>Baosaili</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>10900 тг.</p>
+              <p class='oldPrice'>23195 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='baosaili.php'><img class='indexPagecards' src='img/baoslider3.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Baosaili международный бренд, известный во всем мире!</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus26()"></button>
+          <div class='counter' id='counter26'>0</div>
+          <button class='plus' onclick="plus26()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-4 position'>
+        <h5><a id='subHeader' href='tag36.php'><span class='bold'>Tag Carrera Calibre 36</span></a></h5>
+        <a href='index_watch.html'>Часы и аксессуары</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>19900 тг.</p>
+              <p class='oldPrice'>66335 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='tag36.php'><img class='indexPagecards' src='img/tag36 3.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Возьмите эти часы с собой на деловую встречу</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus28()"></button>
+          <div class='counter' id='counter28'>0</div>
+          <button class='plus' onclick="plus28()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-5 position'>
+        <h5><a id='subHeader' href='bobby.php'><span class='bold'>Городской рюкзак Bobby</span></a></h5>
+        <a href='index_bags.html'>Рюкзаки и сумки</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>9900 тг.</p>
+              <p class='oldPrice'>19800 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='bobby.php'><img class='indexPagecards' src='img/asffsasfsaf2.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Лучший городской рюкзак с защитой от карманников</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus29()"></button>
+          <div class='counter' id='counter29'>0</div>
+          <button class='plus' onclick="plus29()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-6 position'>
+        <h5><a id='subHeader' href='swissgear.php'><span class='bold'>Swiss Gear</span></a></h5>
+        <a href='index_bags.html'>Рюкзаки и сумки</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>18990 тг.</p>
+              <p class='oldPrice'>40405 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='swissgear.php'><img class='indexPagecards' src='img/asfasfasfasfasfawfafs.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Швейцарский рюкзак для путешествий и работы</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus30()"></button>
+          <div class='counter' id='counter30'>0</div>
+          <button class='plus' onclick="plus30()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-7 position'>
+        <h5><a id='subHeader' href='bailini.php'><span class='bold'>Bailini Texas</span></a></h5>
+        <a href='index_bags.html'>Рюкзаки и сумки</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>9900 тг.</p>
+              <p class='oldPrice'>19800 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='bailini.php'><img class='indexPagecards' src='img/dssdgdsdg.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Bailini Texas. Яркое и стильное портмоне</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus31()"></button>
+          <div class='counter' id='counter31'>0</div>
+          <button class='plus' onclick="plus31()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class='position-8 position'>
+        <h5><a id='subHeader' href='jeepandcurren.php'><span class='bold'>Сумка Jeep</span></a></h5>
+        <a href='index_bags.html'>Рюкзаки и сумки</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>10900 тг.</p>
+              <p class='oldPrice'>36335 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='jeepandcurren.php'><img class='indexPagecards containPls' src='img/tovar.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Кожаная мужская сумка jeep  часы curren в подарок</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus32()"></button>
+          <div class='counter' id='counter32'>0</div>
+          <button class='plus' onclick="plus32()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-1 position'>
+        <h5><a id='subHeader' href='xtream.php'><span class='bold'>Чудо-Бритва X-TRIM</span></a></h5>
+        <a href='index_beauty.html'>Красота и Здоровье</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>10900 тг.</p>
+              <p class='oldPrice'>21800 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='xtream.php'><img class='indexPagecards' src='img/b5-min.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Бритва. Ухоженная внешность за 2 минуты</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus33()"></button>
+          <div class='counter' id='counter33'>0</div>
+          <button class='plus' onclick="plus33()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-2 position'>
+        <h5><a id='subHeader' href='hotshapers.php'><span class='bold'>Hot Shapers</span></a></h5>
+        <a href='index_beauty.html'>Красота и Здоровье</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>7990 тг.</p>
+              <p class='oldPrice'>17000 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='hotshapers.php'><img class='indexPagecards containPls' src='img/dfssdfsdffsd.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Переведите процесс похудения в фоновый режим</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus34()"></button>
+          <div class='counter' id='counter34'>0</div>
+          <button class='plus' onclick="plus34()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-3 position'>
+        <h5><a id='subHeader' href='splitend.php'><span class='bold'>Split Ender</span></a></h5>
+        <a href='index_beauty.html'>Красота и Здоровье</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>6900 тг.</p>
+              <p class='oldPrice'>14685 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='splitend.php'><img class='indexPagecards containPls' src='img/afsafsafsa.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Вы можете достичь желаемой длинны волос быстрее</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus35()"></button>
+          <div class='counter' id='counter35'>0</div>
+          <button class='plus' onclick="plus35()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-4 position'>
+        <h5><a id='subHeader' href='fasthair.php'><span class='bold'>Fast Hair</span></a></h5>
+        <a href='index_beauty.html'>Красота и Здоровье</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>5900 тг.</p>
+              <p class='oldPrice'>12555 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='fasthair.php'><img class='indexPagecards' src='img/dassdadsadsa5.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Электрическая расческа-выпрямитель FAST HAIR</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus36()"></button>
+          <div class='counter' id='counter36'>0</div>
+          <button class='plus' onclick="plus36()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-5 position'>
+        <h5><a id='subHeader' href='combydress.php'><span class='bold'>SlimShapewear</span></a></h5>
+        <a href='index_beauty.html'>Красота и Здоровье</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>7990 тг.</p>
+              <p class='oldPrice'>17000 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='combydress.php'><img class='indexPagecards containPls' src='img/fasfsafas.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Утягивающее белье  дарит вам красоту и комфорт</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus37()"></button>
+          <div class='counter' id='counter37'>0</div>
+          <button class='plus' onclick="plus37()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-6 position'>
+        <h5><a id='subHeader' href='ems.php'><span class='bold'>EMS Trainer</span></a></h5>
+        <a href='index_beauty.html'>Красота и Здоровье</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>11990 тг.</p>
+              <p class='oldPrice'>23800 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='ems.php'><img class='indexPagecards' src='img/afsafsasfafs.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Революционная технология тренировки мышц</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus38()"></button>
+          <div class='counter' id='counter38'>0</div>
+          <button class='plus' onclick="plus38()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-7 position'>
+        <h5><a id='subHeader' href='flybra+gift.php'><span class='bold'>FlyBra + Жид. колготки</span></a></h5>
+        <a href='index_beauty.html'>Красота и Здоровье</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>8900 тг.</p>
+              <p class='oldPrice'>19780 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='flybra+gift.php'><img class='indexPagecards containPls' src='img/zhidkie-kolgotki-top-model-secrsdsddssddset_abeae3a0872e2b5_300x300.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Закажите Fly Bra сегодня и получите подарок</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus39()"></button>
+          <div class='counter' id='counter39'>0</div>
+          <button class='plus' onclick="plus39()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class='position-8 position'>
+        <h5><a id='subHeader' href='waisttrainer.php'><span class='bold'>Waist Trainer</span></a></h5>
+        <a href='index_beauty.html'>Красота и Здоровье</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>9999 тг.</p>
+              <p class='oldPrice'>19998 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='waisttrainer.php'><img class='indexPagecards containPls' src='img/1_-ZlSACyRJLz742cOv4h36wssss.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Ваша талия будет ИДЕАЛЬНАЯ с Waist Training</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus40()"></button>
+          <div class='counter' id='counter40'>0</div>
+          <button class='plus' onclick="plus40()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-1 position'>
+        <h5><a id='subHeader' href='spotcleaner.php'><span class='bold'>Spot Cleaner</span></a></h5>
+        <a href='index_beauty.html'>Красота и Здоровье</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>10990 тг.</p>
+              <p class='oldPrice'>23385 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='spotcleaner.php'><img class='indexPagecards containPls' src='img/block-1-measfsafafsasfdal1.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Вакуумная чистка — передовая технология в Европе</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus41()"></button>
+          <div class='counter' id='counter41'>0</div>
+          <button class='plus' onclick="plus41()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-2 position'>
+        <h5><a id='subHeader' href='beautybox.php'><span class='bold'>Beauty Box</span></a></h5>
+        <a href='index_beauty.html'>Красота и Здоровье</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>9900 тг.</p>
+              <p class='oldPrice'>21065 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='beautybox.php'><img class='indexPagecards' src='img/sfdfsdfssfd.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>С органайзером Beauty Box вы забудете о беспорядке</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus42()"></button>
+          <div class='counter' id='counter42'>0</div>
+          <button class='plus' onclick="plus42()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-3 position'>
+        <h5><a id='subHeader' href='flybra.php'><span class='bold'>Бюстгальтер-Невидимка</span></a></h5>
+        <a href='index_beauty.html'>Красота и Здоровье</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>8900 тг.</p>
+              <p class='oldPrice'>18940 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='flybra.php'><img class='indexPagecards containPls' src='img/ezgif-1-1595ff89d105.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Бюстгальтер-невидимка – революционное изобретение!</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus43()"></button>
+          <div class='counter' id='counter43'>0</div>
+          <button class='plus' onclick="plus43()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-4 position'>
+        <h5><a id='subHeader' href='hatchimal.php'><span class='bold'>Hatchimals</span></a></h5>
+        <a href='index_kids.html'>Для детей</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>12900 тг.</p>
+              <p class='oldPrice'>27450 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='hatchimal.php'><img class='indexPagecards containPls' src='img/Hatchimals-Hatchibabies-logo-DO-NOT-USE-BEFORE-17SEPT.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Hatchanimals для детей, которые любят чудеса!</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus44()"></button>
+          <div class='counter' id='counter44'>0</div>
+          <button class='plus' onclick="plus44()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-5 position'>
+        <h5><a id='subHeader' href='magicmagnet.php'><span class='bold'>Magical Magnet</span></a></h5>
+        <a href='index_kids.html'>Для детей</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>7900 тг.</p>
+              <p class='oldPrice'>19750 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='magicmagnet.php'><img class='indexPagecards containPls' src='img/fsdfsddsffsd.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Магнитный Конструктор Magical Magnet</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus45()"></button>
+          <div class='counter' id='counter45'>0</div>
+          <button class='plus' onclick="plus45()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-6 position'>
+        <h5><a id='subHeader' href='babywatch.php'><span class='bold'>Smart Baby Watch Q100</span></a></h5>
+        <a href='index_kids.html'>Для детей</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>25990 тг.</p>
+              <p class='oldPrice'> 51990тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='babywatch.php'><img class='indexPagecards containPls' src='img/time_img.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Smart Baby Watch Q100 c ярким цветным экраном</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus46()"></button>
+          <div class='counter' id='counter46'>0</div>
+          <button class='plus' onclick="plus46()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-7 position'>
+        <h5><a id='subHeader' href='mashakukla.php'><span class='bold'>Интер. Кукла Маша</span></a></h5>
+        <a href='index_kids.html'>Для детей</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>12900 тг.</p>
+              <p class='oldPrice'>27450 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='mashakukla.php'><img class='indexPagecards containPls' src='img/produsssct.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Маша - Научит малыша интересным стишкам</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus47()"></button>
+          <div class='counter' id='counter47'>0</div>
+          <button class='plus' onclick="plus47()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class='position-8 position'>
+        <h5><a id='subHeader' href='track.php'><span class='bold'>Stunt Track</span></a></h5>
+        <a href='index_kids.html'>Для детей</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>2900 тг.</p>
+              <p class='oldPrice'>6175 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='track.php'><img class='indexPagecards containPls' src='img/dfsfdssfddffds.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Гибкая и яркая гоночная трасса Лучший подарок.</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus48()"></button>
+          <div class='counter' id='counter48'>0</div>
+          <button class='plus' onclick="plus48()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-1 position'>
+        <h5><a id='subHeader' href='magictrack.php'><span class='bold'>Magic Track</span></a></h5>
+        <a href='index_kids.html'>Для детей</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>4990 тг.</p>
+              <p class='oldPrice'>10620 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='magictrack.php'><img class='indexPagecards containPls' src='img/b1-min.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Гнущийся и светящийся гоночный трек</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus49()"></button>
+          <div class='counter' id='counter49'>0</div>
+          <button class='plus' onclick="plus49()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-2 position'>
+        <h5><a id='subHeader' href='lol.php'><span class='bold'>Куклы-Сюрприз LOL</span></a></h5>
+        <a href='index_kids.html'>Для детей</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>2900 тг.</p>
+              <p class='oldPrice'>6175 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='lol.php'><img class='indexPagecards' src='img/fdfssdfsfdfsdsdfsfd.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Перед вами игрушка-сюрприз кукла ЛОЛ в шарике.</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus50()"></button>
+          <div class='counter' id='counter50'>0</div>
+          <button class='plus' onclick="plus50()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-3 position'>
+        <h5><a id='subHeader' href='hoverball.php'><span class='bold'>Hover Ball</span></a></h5>
+        <a href='index_kids.html'>Для детей</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>5900 тг.</p>
+              <p class='oldPrice'>12555 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='hoverball.php'><img class='indexPagecards containPls' src='img/saffsaafsafsafsfsa.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Hoverball Мировая детская игрушка теперь и в СНГ!</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus51()"></button>
+          <div class='counter' id='counter51'>0</div>
+          <button class='plus' onclick="plus51()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-4 position'>
+        <h5><a id='subHeader' href='monkey.php'><span class='bold'>Fingerlings Monkey</span></a></h5>
+        <a href='index_kids.html'>Для детей</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>9900 тг.</p>
+              <p class='oldPrice'>19800 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='monkey.php'><img class='indexPagecards containPls' src='img/dasdasdsaadsadsad.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Интерактивная игрушка обезьянка Fingerlings Monke</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus52()"></button>
+          <div class='counter' id='counter52'>0</div>
+          <button class='plus' onclick="plus52()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-5 position'>
+        <h5><a id='subHeader' href='frodoring.php'><span class='bold'>Кольцо Всевластия</span></a></h5>
+        <a href='index_misc.html'>Разное</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>2990 тг.</p>
+              <p class='oldPrice'>5000 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='frodoring.php'><img class='indexPagecards containPls' src='img/ring-full.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Кольцо всевластия из «Властелин колец» и "Хоббит"</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus53()"></button>
+          <div class='counter' id='counter53'>0</div>
+          <button class='plus' onclick="plus53()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-6 position'>
+        <h5><a id='subHeader' href='flexcam.php'><span class='bold'>Гибкая видеокамера</span></a></h5>
+        <a href='index_misc.html'>Разное</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>9900 тг.</p>
+              <p class='oldPrice'>21065 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='flexcam.php'><img class='indexPagecards containPls' src='img/fdssdfsdffsd.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Гибкая мини-видеокамера. Работает в темноте и в воде!</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus54()"></button>
+          <div class='counter' id='counter54'>0</div>
+          <button class='plus' onclick="plus54()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-7 position'>
+        <h5><a id='subHeader' href='autoscan.php'><span class='bold'>Автосканер ELM327</span></a></h5>
+        <a href='index_misc.html'>Разное</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>8990 тг.</p>
+              <p class='oldPrice'>19130 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='autoscan.php'><img class='indexPagecards containPls' src='img/header-img.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Автосканер ELM327 (bluetooth, версия 1.5)</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus55()"></button>
+          <div class='counter' id='counter55'>0</div>
+          <button class='plus' onclick="plus55()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class='position-8 position'>
+        <h5><a id='subHeader' href='hbqi.php'><span class='bold'>Беспроводные наушники</span></a></h5>
+        <a href='index_misc.html'>Разное</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>9900 тг.</p>
+              <p class='oldPrice'>30000 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='hbqi.php'><img class='indexPagecards containPls' src='img/khomk00k3s0g8w880oow4g4so40wwg.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>HBQ-I. Высочайшее качество передачи звука</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus56()"></button>
+          <div class='counter' id='counter56'>0</div>
+          <button class='plus' onclick="plus56()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-1 position'>
+        <h5><a id='subHeader' href='organizer.php'><span class='bold'>Органайзер</span></a></h5>
+        <a href='index_misc.html'>Разное</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>5900 тг.</p>
+              <p class='oldPrice'>12555 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='organizer.php'><img class='indexPagecards containPls' src='img/intro-image.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Сделай свою поездку комфортной с органайзером!</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus57()"></button>
+          <div class='counter' id='counter57'>0</div>
+          <button class='plus' onclick="plus57()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-2 position'>
+        <h5><a id='subHeader' href='jbl.php'><span class='bold'>JBL Charge2+</span></a></h5>
+        <a href='index_misc.html'>Разное</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>12900 тг.</p>
+              <p class='oldPrice'>27450 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='jbl.php'><img class='indexPagecards containPls' src='img/img1.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Портативная акустическая система с защитой от брызг</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus58()"></button>
+          <div class='counter' id='counter58'>0</div>
+          <button class='plus' onclick="plus58()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-3 position'>
+        <h5><a id='subHeader' href='boruit.php'><span class='bold'>Фонарь Boruit</span></a></h5>
+        <a href='index_misc.html'>Разное</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>9900 тг.</p>
+              <p class='oldPrice'>21065 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='boruit.php'><img class='indexPagecards containPls' src='img/afsafsafsafs.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Сверхмощный налобный фонарь Boruit</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus59()"></button>
+          <div class='counter' id='counter59'>0</div>
+          <button class='plus' onclick="plus59()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-4 position'>
+        <h5><a id='subHeader' href='canon.php'><span class='bold'>Canon 60X60</span></a></h5>
+        <a href='index_misc.html'>Разное</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>12900 тг.</p>
+              <p class='oldPrice'>27450 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='canon.php'><img class='indexPagecards containPls' src='img/fsdfsdsdfdsfsfd.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Canon 60x60 - Профессиональный бинокль</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus60()"></button>
+          <div class='counter' id='counter60'>0</div>
+          <button class='plus' onclick="plus60()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-5 position'>
+        <h5><a id='subHeader' href='streetset.php'><span class='bold'>Streetset</span></a></h5>
+        <a href='index_misc.html'>Разное</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>8490 тг.</p>
+              <p class='oldPrice'>18065 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='streetset.php'><img class='indexPagecards containPls' src='img/main.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>StreetSet - Надежный мультитут. 14 Инструментов</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus61()"></button>
+          <div class='counter' id='counter61'>0</div>
+          <button class='plus' onclick="plus61()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>      
+
+      <div class='position-6 position'>
+        <h5><a id='subHeader' href='monocular.php'><span class='bold'>Монокуляр</span></a></h5>
+        <a href='index_misc.html'>Разное</a>  
+        <div class='wrapper'>
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>18990 тг.</p>
+              <p class='oldPrice'>37980 тг.</p>
+            </div>            
+          </div>
+        <a id='subHeader' href='monocular.php'><img class='indexPagecards containPls' src='img/shop_items_catalog_image_3403.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Оптика для наблюдения за удаленными объектами</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus62()"></button>
+          <div class='counter' id='counter62'>0</div>
+          <button class='plus' onclick="plus62()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-7 position'>
+        <h5><a id='subHeader' href='tile.php'><span class='bold'>Apple Tile</span></a></h5>
+        <a href='index_misc.html'>Разное</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>8900 тг.</p>
+              <p class='oldPrice'>19130 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='tile.php'><img class='indexPagecards' src='img/sfdfsdfsddfs5.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Apple Tile. Вы больше никогда не потеряете свои ключи</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus63()"></button>
+          <div class='counter' id='counter63'>0</div>
+          <button class='plus' onclick="plus63()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+      <div class='position-8 position hiddenCard'>
+        <h5><a id='subHeader' href='index_misc.php'><span class='bold'>Tile</span></a></h5>
+        <a href='index_misc.html'>Разное</a>        
+        <div class='wrapper'>  
+          <div class='priceCircle'>
+            <div class='priceCircleInner'>              
+              <p class='newPrice'>8990 тг.</p>
+              <p class='oldPrice'>19130 тг.</p>
+            </div>
+          </div>
+        <a id='subHeader' href='index_misc.php'><img class='indexPagecards' src='img/sfdfsdfsddfs5.png'></a>
+        </div>
+        <div class='triangleFlag Sale'><p>Распродажа</p></div>
+        <p class='positionSubs'>Tile трекер. Вы больше никогда не потеряете свои ключи</p>
+        <div class='shoppingCart'>
+          <button class='minus' onclick="minus63()"></button>
+          <div class='counter' id='counter63'>0</div>
+          <button class='plus' onclick="plus63()"></button>              
+          <button class='purchase' data-toggle="modal" data-target="#exampleModalCenter"><img src='img/shopping-cart.svg'>Заказать</button>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+
+      <div class='submit'>
+        <div class='content marginTop'>
+        <h1 class='submitTitle'>СКИДКИ И АКЦИИ</h1>
+        <div class='wrapper submitWrapper'>
+          <p class='submitSubTitle'>Подпишись и узнавай первым о наших скидках и акциях</p>
+          <input type="text" placeholder="your email@email.com">
+          <button class='submitButton'>Подписаться</button>
+          <p class='notation'>Ваша информация не будет показана третьим лицам</p>
+        </div>
+        <img class='fluidImgPercent' src='img/percentage.png'>
+    </div>
+      </div>
+
+    <div class='footer'>
+      <div class='content_1230'>
+        <div class='row'>
+          <div class='col-4 col-sm-4 col-md-2 col-lg-2 col-xl-3'>
+            <img src='img/logo_lux_white.svg'>
+          </div>
+          <div class='col-6 col-sm-6 col-md-8 col-lg-8 col-xl-8'>
+            <p>"Luxury Shop" г.Москва, ул. Новоорловская, д. 5Б, 119633</p>
+          </div>
+          <div class='col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1'>
+            <button><a href="#banner"><img src="img/arrow-up.png"></a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+
+    <script type="text/javascript">
+        $(window).scroll(function() {
+            var height = $(window).scrollTop();
+
+            /*Если сделали скролл на 100px задаём новый класс для header*/
+            if(height > 90){
+                $('#rowTobeFixed').addClass('fixedRow');
+            } else {
+                /*Если меньше 100px удаляем класс для header*/
+                $('#rowTobeFixed').removeClass('fixedRow');
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(window).scroll(function() {
+            var height = $(window).scrollTop();
+
+            /*Если сделали скролл на 100px задаём новый класс для header*/
+            if(height > 90){
+                $('#rowTobeHidden').addClass('hidden');
+            } else {
+                /*Если меньше 100px удаляем класс для header*/
+                $('#rowTobeHidden').removeClass('hidden');
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+   function toggle_visibility(id) {
+       let e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+   }
+   </script>
+
+
+<script>
+    var clicks = 0;
+    function plus() {
+
+        clicks += 1;
+        document.getElementById("counter").innerHTML = clicks;
+    }
+</script>
+
+<script>
+	var clicks;
+	function minus() {
+
+		if (clicks > 0) {
+			clicks -= 1;
+			document.getElementById("counter").innerHTML = clicks;
+		}else{
+			clicks = 0;
+			document.getElementById("counter").innerHTML = clicks;
+		}
+}
+</script>
+
+<script>
+    var clicks1 = 0;
+    function plus1() {
+
+        clicks1 += 1;
+        document.getElementById("counter1").innerHTML = clicks1;
+    }
+</script>
+
+<script>
+	var clicks1;
+	function minus1() {
+
+		if (clicks1 > 0) {
+			clicks1 -= 1;
+			document.getElementById("counter1").innerHTML = clicks1;
+		}else{
+			clicks1 = 0;
+			document.getElementById("counter1").innerHTML = clicks1;
+		}
+}
+</script>
+
+<script>
+    var clicks2 = 0;
+    function plus2() {
+
+        clicks2 += 1;
+        document.getElementById("counter2").innerHTML = clicks2;
+    }
+</script>
+
+<script>
+	var clicks2;
+	function minus2() {
+
+		if (clicks2 > 0) {
+			clicks2 -= 1;
+			document.getElementById("counter2").innerHTML = clicks2;
+		}else{
+			clicks2 = 0;
+			document.getElementById("counter2").innerHTML = clicks2;
+		}
+}
+</script>
+
+<script>
+    var clicks3 = 0;
+    function plus3() {
+
+        clicks3 += 1;
+        document.getElementById("counter3").innerHTML = clicks3;
+    }
+</script>
+
+<script>
+	var clicks3;
+	function minus3() {
+
+		if (clicks3 > 0) {
+			clicks3 -= 1;
+			document.getElementById("counter3").innerHTML = clicks3;
+		}else{
+			clicks3 = 0;
+			document.getElementById("counter3").innerHTML = clicks3;
+		}
+}
+</script>
+
+<script>
+    var clicks4 = 0;
+    function plus4() {
+
+        clicks4 += 1;
+        document.getElementById("counter4").innerHTML = clicks4;
+    }
+</script>
+
+<script>
+	var clicks4;
+	function minus4() {
+
+		if (clicks4 > 0) {
+			clicks4 -= 1;
+			document.getElementById("counter4").innerHTML = clicks4;
+		}else{
+			clicks4 = 0;
+			document.getElementById("counter4").innerHTML = clicks4;
+		}
+}
+</script>
+
+<script>
+    var clicks5 = 0;
+    function plus5() {
+
+        clicks5 += 1;
+        document.getElementById("counter5").innerHTML = clicks5;
+    }
+</script>
+
+<script>
+	var clicks5;
+	function minus5() {
+
+		if (clicks5 > 0) {
+			clicks5 -= 1;
+			document.getElementById("counter5").innerHTML = clicks5;
+		}else{
+			clicks5 = 0;
+			document.getElementById("counter5").innerHTML = clicks5;
+		}
+}
+</script>
+
+<script>
+    var clicks6 = 0;
+    function plus6() {
+
+        clicks6 += 1;
+        document.getElementById("counter6").innerHTML = clicks6;
+    }
+</script>
+
+<script>
+	var clicks6;
+	function minus6() {
+
+		if (clicks6 > 0) {
+			clicks6 -= 1;
+			document.getElementById("counter6").innerHTML = clicks6;
+		}else{
+			clicks6 = 0;
+			document.getElementById("counter6").innerHTML = clicks6;
+		}
+}
+</script>
+
+<script>
+    var clicks7 = 0;
+    function plus7() {
+
+        clicks7 += 1;
+        document.getElementById("counter7").innerHTML = clicks7;
+    }
+</script>
+
+<script>
+	var clicks7;
+	function minus7() {
+
+		if (clicks7 > 0) {
+			clicks7 -= 1;
+			document.getElementById("counter7").innerHTML = clicks7;
+		}else{
+			clicks7 = 0;
+			document.getElementById("counter7").innerHTML = clicks7;
+		}
+}
+</script>
+
+<script>
+    var clicks8 = 0;
+    function plus8() {
+
+        clicks8 += 1;
+        document.getElementById("counter8").innerHTML = clicks8;
+    }
+</script>
+
+<script>
+	var clicks8;
+	function minus8() {
+
+		if (clicks8 > 0) {
+			clicks8 -= 1;
+			document.getElementById("counter8").innerHTML = clicks8;
+		}else{
+			clicks8 = 0;
+			document.getElementById("counter8").innerHTML = clicks8;
+		}
+}
+</script>
+
+<script>
+    var clicks9 = 0;
+    function plus9() {
+
+        clicks9 += 1;
+        document.getElementById("counter9").innerHTML = clicks9;
+    }
+</script>
+
+<script>
+	var clicks9;
+	function minus9() {
+
+		if (clicks9 > 0) {
+			clicks9 -= 1;
+			document.getElementById("counter9").innerHTML = clicks9;
+		}else{
+			clicks9 = 0;
+			document.getElementById("counter9").innerHTML = clicks9;
+		}
+}
+</script>
+
+<script>
+    var clicks10 = 0;
+    function plus10() {
+
+        clicks10 += 1;
+        document.getElementById("counter10").innerHTML = clicks10;
+    }
+</script>
+
+<script>
+	var clicks10;
+	function minus10() {
+
+		if (clicks10 > 0) {
+			clicks10 -= 1;
+			document.getElementById("counter10").innerHTML = clicks10;
+		}else{
+			clicks10 = 0;
+			document.getElementById("counter10").innerHTML = clicks10;
+		}
+}
+</script>
+
+<script>
+    var clicks11 = 0;
+    function plus11() {
+
+        clicks11 += 1;
+        document.getElementById("counter11").innerHTML = clicks11;
+    }
+</script>
+
+<script>
+	var clicks11;
+	function minus11() {
+
+		if (clicks11 > 0) {
+			clicks11 -= 1;
+			document.getElementById("counter11").innerHTML = clicks11;
+		}else{
+			clicks11 = 0;
+			document.getElementById("counter11").innerHTML = clicks11;
+		}
+}
+</script>
+
+<script>
+    var clicks12 = 0;
+    function plus12() {
+
+        clicks12 += 1;
+        document.getElementById("counter12").innerHTML = clicks12;
+    }
+</script>
+
+<script>
+	var clicks12;
+	function minus12() {
+
+		if (clicks12 > 0) {
+			clicks12 -= 1;
+			document.getElementById("counter12").innerHTML = clicks12;
+		}else{
+			clicks12 = 0;
+			document.getElementById("counter12").innerHTML = clicks12;
+		}
+}
+</script>
+
+<script>
+    var clicks13 = 0;
+    function plus13() {
+
+        clicks13 += 1;
+        document.getElementById("counter13").innerHTML = clicks13;
+    }
+</script>
+
+<script>
+	var clicks13;
+	function minus13() {
+
+		if (clicks13 > 0) {
+			clicks13 -= 1;
+			document.getElementById("counter13").innerHTML = clicks13;
+		}else{
+			clicks13 = 0;
+			document.getElementById("counter13").innerHTML = clicks13;
+		}
+}
+</script>
+
+<script>
+    var clicks14 = 0;
+    function plus14() {
+
+        clicks14 += 1;
+        document.getElementById("counter14").innerHTML = clicks14;
+    }
+</script>
+
+<script>
+	var clicks14;
+	function minus14() {
+
+		if (clicks14 > 0) {
+			clicks14 -= 1;
+			document.getElementById("counter14").innerHTML = clicks14;
+		}else{
+			clicks14 = 0;
+			document.getElementById("counter14").innerHTML = clicks14;
+		}
+}
+</script>
+
+<script>
+    var clicks15 = 0;
+    function plus15() {
+
+        clicks15 += 1;
+        document.getElementById("counter15").innerHTML = clicks15;
+    }
+</script>
+
+<script>
+	var clicks15;
+	function minus15() {
+
+		if (clicks15 > 0) {
+			clicks15 -= 1;
+			document.getElementById("counter15").innerHTML = clicks15;
+		}else{
+			clicks15 = 0;
+			document.getElementById("counter15").innerHTML = clicks15;
+		}
+}
+</script>
+
+<script>
+    var clicks16 = 0;
+    function plus16() {
+
+        clicks16 += 1;
+        document.getElementById("counter16").innerHTML = clicks16;
+    }
+</script>
+
+<script>
+  var clicks16;
+  function minus16() {
+
+    if (clicks16 > 0) {
+      clicks16 -= 1;
+      document.getElementById("counter16").innerHTML = clicks16;
+    }else{
+      clicks16 = 0;
+      document.getElementById("counter16").innerHTML = clicks16;
+    }
+}
+</script>
+
+<script>
+    var clicks17 = 0;
+    function plus17() {
+
+        clicks17 += 1;
+        document.getElementById("counter17").innerHTML = clicks17;
+    }
+</script>
+
+<script>
+  var clicks17;
+  function minus17() {
+
+    if (clicks17 > 0) {
+      clicks17 -= 1;
+      document.getElementById("counter17").innerHTML = clicks17;
+    }else{
+      clicks17 = 0;
+      document.getElementById("counter17").innerHTML = clicks17;
+    }
+}
+</script>
+
+<script>
+    var clicks18 = 0;
+    function plus18() {
+
+        clicks18 += 1;
+        document.getElementById("counter18").innerHTML = clicks18;
+    }
+</script>
+
+<script>
+  var clicks18;
+  function minus18() {
+
+    if (clicks18 > 0) {
+      clicks18 -= 1;
+      document.getElementById("counter18").innerHTML = clicks18;
+    }else{
+      clicks18 = 0;
+      document.getElementById("counter18").innerHTML = clicks18;
+    }
+}
+</script>
+
+<script>
+    var clicks19 = 0;
+    function plus19() {
+
+        clicks19 += 1;
+        document.getElementById("counter19").innerHTML = clicks19;
+    }
+</script>
+
+<script>
+  var clicks19;
+  function minus19() {
+
+    if (clicks19 > 0) {
+      clicks19 -= 1;
+      document.getElementById("counter19").innerHTML = clicks19;
+    }else{
+      clicks19 = 0;
+      document.getElementById("counter19").innerHTML = clicks19;
+    }
+}
+</script>
+
+<script>
+    var clicks20 = 0;
+    function plus20() {
+
+        clicks20 += 1;
+        document.getElementById("counter20").innerHTML = clicks20;
+    }
+</script>
+
+<script>
+  var clicks20;
+  function minus20() {
+
+    if (clicks20 > 0) {
+      clicks20 -= 1;
+      document.getElementById("counter20").innerHTML = clicks20;
+    }else{
+      clicks20 = 0;
+      document.getElementById("counter20").innerHTML = clicks20;
+    }
+}
+</script>
+
+<script>
+    var clicks21 = 0;
+    function plus21() {
+
+        clicks21 += 1;
+        document.getElementById("counter21").innerHTML = clicks21;
+    }
+</script>
+
+<script>
+  var clicks21;
+  function minus21() {
+
+    if (clicks21 > 0) {
+      clicks21 -= 1;
+      document.getElementById("counter21").innerHTML = clicks21;
+    }else{
+      clicks21 = 0;
+      document.getElementById("counter21").innerHTML = clicks21;
+    }
+}
+</script>
+
+<script>
+    var clicks22 = 0;
+    function plus22() {
+
+        clicks22 += 1;
+        document.getElementById("counter22").innerHTML = clicks22;
+    }
+</script>
+
+<script>
+  var clicks22;
+  function minus22() {
+
+    if (clicks22 > 0) {
+      clicks22 -= 1;
+      document.getElementById("counter22").innerHTML = clicks22;
+    }else{
+      clicks22 = 0;
+      document.getElementById("counter22").innerHTML = clicks22;
+    }
+}
+</script>
+
+<script>
+    var clicks23 = 0;
+    function plus23() {
+
+        clicks23 += 1;
+        document.getElementById("counter23").innerHTML = clicks23;
+    }
+</script>
+
+<script>
+  var clicks23;
+  function minus23() {
+
+    if (clicks23 > 0) {
+      clicks23 -= 1;
+      document.getElementById("counter23").innerHTML = clicks23;
+    }else{
+      clicks23 = 0;
+      document.getElementById("counter23").innerHTML = clicks23;
+    }
+}
+</script>
+
+<script>
+    var clicks24 = 0;
+    function plus24() {
+
+        clicks24 += 1;
+        document.getElementById("counter24").innerHTML = clicks24;
+    }
+</script>
+
+<script>
+  var clicks24;
+  function minus24() {
+
+    if (clicks24 > 0) {
+      clicks24 -= 1;
+      document.getElementById("counter24").innerHTML = clicks24;
+    }else{
+      clicks24 = 0;
+      document.getElementById("counter24").innerHTML = clicks24;
+    }
+}
+</script>
+
+<script>
+    var clicks25 = 0;
+    function plus25() {
+
+        clicks25 += 1;
+        document.getElementById("counter25").innerHTML = clicks25;
+    }
+</script>
+
+<script>
+  var clicks25;
+  function minus25() {
+
+    if (clicks25 > 0) {
+      clicks25 -= 1;
+      document.getElementById("counter25").innerHTML = clicks25;
+    }else{
+      clicks25 = 0;
+      document.getElementById("counter25").innerHTML = clicks25;
+    }
+}
+</script>
+
+<script>
+    var clicks26 = 0;
+    function plus26() {
+
+        clicks26 += 1;
+        document.getElementById("counter26").innerHTML = clicks26;
+    }
+</script>
+
+<script>
+  var clicks26;
+  function minus26() {
+
+    if (clicks26 > 0) {
+      clicks26 -= 1;
+      document.getElementById("counter26").innerHTML = clicks26;
+    }else{
+      clicks26 = 0;
+      document.getElementById("counter26").innerHTML = clicks26;
+    }
+}
+</script>
+
+<script>
+    var clicks27 = 0;
+    function plus27() {
+
+        clicks27 += 1;
+        document.getElementById("counter27").innerHTML = clicks27;
+    }
+</script>
+
+<script>
+  var clicks27;
+  function minus27() {
+
+    if (clicks27 > 0) {
+      clicks27 -= 1;
+      document.getElementById("counter27").innerHTML = clicks27;
+    }else{
+      clicks27 = 0;
+      document.getElementById("counter27").innerHTML = clicks27;
+    }
+}
+</script>
+
+<script>
+    var clicks28 = 0;
+    function plus28() {
+
+        clicks28 += 1;
+        document.getElementById("counter28").innerHTML = clicks28;
+    }
+</script>
+
+<script>
+  var clicks28;
+  function minus28() {
+
+    if (clicks28 > 0) {
+      clicks28 -= 1;
+      document.getElementById("counter28").innerHTML = clicks28;
+    }else{
+      clicks28 = 0;
+      document.getElementById("counter28").innerHTML = clicks28;
+    }
+}
+</script>
+
+<script>
+    var clicks29 = 0;
+    function plus29() {
+
+        clicks29 += 1;
+        document.getElementById("counter29").innerHTML = clicks29;
+    }
+</script>
+
+<script>
+  var clicks29;
+  function minus29() {
+
+    if (clicks29 > 0) {
+      clicks29 -= 1;
+      document.getElementById("counter29").innerHTML = clicks29;
+    }else{
+      clicks29 = 0;
+      document.getElementById("counter29").innerHTML = clicks29;
+    }
+}
+</script>
+
+<script>
+    var clicks30 = 0;
+    function plus30() {
+
+        clicks30 += 1;
+        document.getElementById("counter30").innerHTML = clicks30;
+    }
+</script>
+
+<script>
+  var clicks30;
+  function minus30() {
+
+    if (clicks30 > 0) {
+      clicks30 -= 1;
+      document.getElementById("counter30").innerHTML = clicks30;
+    }else{
+      clicks30 = 0;
+      document.getElementById("counter30").innerHTML = clicks30;
+    }
+}
+</script>
+
+<script>
+    var clicks31 = 0;
+    function plus31() {
+
+        clicks31 += 1;
+        document.getElementById("counter31").innerHTML = clicks31;
+    }
+</script>
+
+<script>
+  var clicks31;
+  function minus31() {
+
+    if (clicks31 > 0) {
+      clicks31 -= 1;
+      document.getElementById("counter31").innerHTML = clicks31;
+    }else{
+      clicks31 = 0;
+      document.getElementById("counter31").innerHTML = clicks31;
+    }
+}
+</script>
+
+<script>
+    var clicks32 = 0;
+    function plus32() {
+
+        clicks32 += 1;
+        document.getElementById("counter32").innerHTML = clicks32;
+    }
+</script>
+
+<script>
+  var clicks32;
+  function minus32() {
+
+    if (clicks32 > 0) {
+      clicks32 -= 1;
+      document.getElementById("counter32").innerHTML = clicks32;
+    }else{
+      clicks32 = 0;
+      document.getElementById("counter32").innerHTML = clicks32;
+    }
+}
+</script>
+
+<script>
+    var clicks33 = 0;
+    function plus33() {
+
+        clicks33 += 1;
+        document.getElementById("counter33").innerHTML = clicks33;
+    }
+</script>
+
+<script>
+  var clicks33;
+  function minus33() {
+
+    if (clicks33 > 0) {
+      clicks33 -= 1;
+      document.getElementById("counter33").innerHTML = clicks33;
+    }else{
+      clicks33 = 0;
+      document.getElementById("counter33").innerHTML = clicks33;
+    }
+}
+</script>
+
+<script>
+    var clicks34 = 0;
+    function plus34() {
+
+        clicks34 += 1;
+        document.getElementById("counter34").innerHTML = clicks34;
+    }
+</script>
+
+<script>
+  var clicks34;
+  function minus34() {
+
+    if (clicks34 > 0) {
+      clicks34 -= 1;
+      document.getElementById("counter34").innerHTML = clicks34;
+    }else{
+      clicks34 = 0;
+      document.getElementById("counter34").innerHTML = clicks34;
+    }
+}
+</script>
+
+<script>
+    var clicks35 = 0;
+    function plus35() {
+
+        clicks35 += 1;
+        document.getElementById("counter35").innerHTML = clicks35;
+    }
+</script>
+
+<script>
+  var clicks35;
+  function minus35() {
+
+    if (clicks35 > 0) {
+      clicks35 -= 1;
+      document.getElementById("counter35").innerHTML = clicks35;
+    }else{
+      clicks35 = 0;
+      document.getElementById("counter35").innerHTML = clicks35;
+    }
+}
+</script>
+
+<script>
+    var clicks36 = 0;
+    function plus36() {
+
+        clicks36 += 1;
+        document.getElementById("counter36").innerHTML = clicks36;
+    }
+</script>
+
+<script>
+  var clicks36;
+  function minus36() {
+
+    if (clicks36 > 0) {
+      clicks36 -= 1;
+      document.getElementById("counter36").innerHTML = clicks36;
+    }else{
+      clicks36 = 0;
+      document.getElementById("counter36").innerHTML = clicks36;
+    }
+}
+</script>
+
+<script>
+    var clicks37 = 0;
+    function plus37() {
+
+        clicks37 += 1;
+        document.getElementById("counter37").innerHTML = clicks37;
+    }
+</script>
+
+<script>
+  var clicks37;
+  function minus37() {
+
+    if (clicks37 > 0) {
+      clicks37 -= 1;
+      document.getElementById("counter37").innerHTML = clicks37;
+    }else{
+      clicks37 = 0;
+      document.getElementById("counter37").innerHTML = clicks37;
+    }
+}
+</script>
+
+<script>
+    var clicks38 = 0;
+    function plus38() {
+
+        clicks38 += 1;
+        document.getElementById("counter38").innerHTML = clicks38;
+    }
+</script>
+
+<script>
+  var clicks38;
+  function minus38() {
+
+    if (clicks38 > 0) {
+      clicks38 -= 1;
+      document.getElementById("counter38").innerHTML = clicks38;
+    }else{
+      clicks38 = 0;
+      document.getElementById("counter38").innerHTML = clicks38;
+    }
+}
+</script>
+
+<script>
+    var clicks39 = 0;
+    function plus39() {
+
+        clicks39 += 1;
+        document.getElementById("counter39").innerHTML = clicks39;
+    }
+</script>
+
+<script>
+  var clicks39;
+  function minus39() {
+
+    if (clicks39 > 0) {
+      clicks39 -= 1;
+      document.getElementById("counter39").innerHTML = clicks39;
+    }else{
+      clicks39 = 0;
+      document.getElementById("counter39").innerHTML = clicks39;
+    }
+}
+</script>
+
+<script>
+    var clicks40 = 0;
+    function plus40() {
+
+        clicks40 += 1;
+        document.getElementById("counter40").innerHTML = clicks40;
+    }
+</script>
+
+<script>
+  var clicks40;
+  function minus40() {
+
+    if (clicks40 > 0) {
+      clicks40 -= 1;
+      document.getElementById("counter40").innerHTML = clicks40;
+    }else{
+      clicks40 = 0;
+      document.getElementById("counter40").innerHTML = clicks40;
+    }
+}
+</script>
+
+<script>
+    var clicks41 = 0;
+    function plus41() {
+
+        clicks41 += 1;
+        document.getElementById("counter41").innerHTML = clicks41;
+    }
+</script>
+
+<script>
+  var clicks41;
+  function minus41() {
+
+    if (clicks41 > 0) {
+      clicks41 -= 1;
+      document.getElementById("counter41").innerHTML = clicks41;
+    }else{
+      clicks41 = 0;
+      document.getElementById("counter41").innerHTML = clicks41;
+    }
+}
+</script>
+
+<script>
+    var clicks42 = 0;
+    function plus42() {
+
+        clicks42 += 1;
+        document.getElementById("counter42").innerHTML = clicks42;
+    }
+</script>
+
+<script>
+  var clicks42;
+  function minus42() {
+
+    if (clicks42 > 0) {
+      clicks42 -= 1;
+      document.getElementById("counter42").innerHTML = clicks42;
+    }else{
+      clicks42 = 0;
+      document.getElementById("counter42").innerHTML = clicks42;
+    }
+}
+</script>
+
+<script>
+    var clicks43 = 0;
+    function plus43() {
+
+        clicks43 += 1;
+        document.getElementById("counter43").innerHTML = clicks43;
+    }
+</script>
+
+<script>
+  var clicks43;
+  function minus43() {
+
+    if (clicks43 > 0) {
+      clicks43 -= 1;
+      document.getElementById("counter43").innerHTML = clicks43;
+    }else{
+      clicks43 = 0;
+      document.getElementById("counter43").innerHTML = clicks43;
+    }
+}
+</script>
+
+<script>
+    var clicks44 = 0;
+    function plus44() {
+
+        clicks44 += 1;
+        document.getElementById("counter44").innerHTML = clicks44;
+    }
+</script>
+
+<script>
+  var clicks44;
+  function minus44() {
+
+    if (clicks44 > 0) {
+      clicks44 -= 1;
+      document.getElementById("counter44").innerHTML = clicks44;
+    }else{
+      clicks44 = 0;
+      document.getElementById("counter44").innerHTML = clicks44;
+    }
+}
+</script>
+
+<script>
+    var clicks45 = 0;
+    function plus45() {
+
+        clicks45 += 1;
+        document.getElementById("counter45").innerHTML = clicks45;
+    }
+</script>
+
+<script>
+  var clicks45;
+  function minus45() {
+
+    if (clicks45 > 0) {
+      clicks45 -= 1;
+      document.getElementById("counter45").innerHTML = clicks45;
+    }else{
+      clicks45 = 0;
+      document.getElementById("counter45").innerHTML = clicks45;
+    }
+}
+</script>
+
+<script>
+    var clicks46 = 0;
+    function plus46() {
+
+        clicks46 += 1;
+        document.getElementById("counter46").innerHTML = clicks46;
+    }
+</script>
+
+<script>
+  var clicks46;
+  function minus46() {
+
+    if (clicks46 > 0) {
+      clicks46 -= 1;
+      document.getElementById("counter46").innerHTML = clicks46;
+    }else{
+      clicks46 = 0;
+      document.getElementById("counter46").innerHTML = clicks46;
+    }
+}
+</script>
+
+<script>
+    var clicks47 = 0;
+    function plus47() {
+
+        clicks47 += 1;
+        document.getElementById("counter47").innerHTML = clicks47;
+    }
+</script>
+
+<script>
+  var clicks47;
+  function minus47() {
+
+    if (clicks47 > 0) {
+      clicks47 -= 1;
+      document.getElementById("counter47").innerHTML = clicks47;
+    }else{
+      clicks47 = 0;
+      document.getElementById("counter47").innerHTML = clicks47;
+    }
+}
+</script>
+
+<script>
+    var clicks48 = 0;
+    function plus48() {
+
+        clicks48 += 1;
+        document.getElementById("counter48").innerHTML = clicks48;
+    }
+</script>
+
+<script>
+  var clicks48;
+  function minus48() {
+
+    if (clicks48 > 0) {
+      clicks48 -= 1;
+      document.getElementById("counter48").innerHTML = clicks48;
+    }else{
+      clicks48 = 0;
+      document.getElementById("counter48").innerHTML = clicks48;
+    }
+}
+</script>
+
+<script>
+    var clicks49 = 0;
+    function plus49() {
+
+        clicks49 += 1;
+        document.getElementById("counter49").innerHTML = clicks49;
+    }
+</script>
+
+<script>
+  var clicks49;
+  function minus49() {
+
+    if (clicks49 > 0) {
+      clicks49 -= 1;
+      document.getElementById("counter49").innerHTML = clicks49;
+    }else{
+      clicks49 = 0;
+      document.getElementById("counter49").innerHTML = clicks49;
+    }
+}
+</script>
+
+<script>
+    var clicks50 = 0;
+    function plus50() {
+
+        clicks50 += 1;
+        document.getElementById("counter50").innerHTML = clicks50;
+    }
+</script>
+
+<script>
+  var clicks50;
+  function minus50() {
+
+    if (clicks50 > 0) {
+      clicks50 -= 1;
+      document.getElementById("counter50").innerHTML = clicks50;
+    }else{
+      clicks50 = 0;
+      document.getElementById("counter50").innerHTML = clicks50;
+    }
+}
+</script>
+
+<script>
+    var clicks51 = 0;
+    function plus51() {
+
+        clicks51 += 1;
+        document.getElementById("counter51").innerHTML = clicks51;
+    }
+</script>
+
+<script>
+  var clicks51;
+  function minus51() {
+
+    if (clicks51 > 0) {
+      clicks51 -= 1;
+      document.getElementById("counter51").innerHTML = clicks51;
+    }else{
+      clicks51 = 0;
+      document.getElementById("counter51").innerHTML = clicks51;
+    }
+}
+</script>
+
+<script>
+    var clicks52 = 0;
+    function plus52() {
+
+        clicks52 += 1;
+        document.getElementById("counter52").innerHTML = clicks52;
+    }
+</script>
+
+<script>
+  var clicks52;
+  function minus52() {
+
+    if (clicks52 > 0) {
+      clicks52 -= 1;
+      document.getElementById("counter52").innerHTML = clicks52;
+    }else{
+      clicks52 = 0;
+      document.getElementById("counter52").innerHTML = clicks52;
+    }
+}
+</script>
+
+<script>
+    var clicks53 = 0;
+    function plus53() {
+
+        clicks53 += 1;
+        document.getElementById("counter53").innerHTML = clicks53;
+    }
+</script>
+
+<script>
+  var clicks53;
+  function minus53() {
+
+    if (clicks53 > 0) {
+      clicks53 -= 1;
+      document.getElementById("counter53").innerHTML = clicks53;
+    }else{
+      clicks53 = 0;
+      document.getElementById("counter53").innerHTML = clicks53;
+    }
+}
+</script>
+
+<script>
+    var clicks54 = 0;
+    function plus54() {
+
+        clicks54 += 1;
+        document.getElementById("counter54").innerHTML = clicks54;
+    }
+</script>
+
+<script>
+  var clicks54;
+  function minus54() {
+
+    if (clicks54 > 0) {
+      clicks54 -= 1;
+      document.getElementById("counter54").innerHTML = clicks54;
+    }else{
+      clicks54 = 0;
+      document.getElementById("counter54").innerHTML = clicks54;
+    }
+}
+</script>
+
+<script>
+    var clicks55 = 0;
+    function plus55() {
+
+        clicks55 += 1;
+        document.getElementById("counter55").innerHTML = clicks55;
+    }
+</script>
+
+<script>
+  var clicks55;
+  function minus55() {
+
+    if (clicks55 > 0) {
+      clicks55 -= 1;
+      document.getElementById("counter55").innerHTML = clicks55;
+    }else{
+      clicks55 = 0;
+      document.getElementById("counter55").innerHTML = clicks55;
+    }
+}
+</script>
+
+<script>
+    var clicks56 = 0;
+    function plus56() {
+
+        clicks56 += 1;
+        document.getElementById("counter56").innerHTML = clicks56;
+    }
+</script>
+
+<script>
+  var clicks56;
+  function minus56() {
+
+    if (clicks56 > 0) {
+      clicks56 -= 1;
+      document.getElementById("counter56").innerHTML = clicks56;
+    }else{
+      clicks56 = 0;
+      document.getElementById("counter56").innerHTML = clicks56;
+    }
+}
+</script>
+
+<script>
+    var clicks57 = 0;
+    function plus57() {
+
+        clicks57 += 1;
+        document.getElementById("counter57").innerHTML = clicks57;
+    }
+</script>
+
+<script>
+  var clicks57;
+  function minus57() {
+
+    if (clicks57 > 0) {
+      clicks57 -= 1;
+      document.getElementById("counter57").innerHTML = clicks57;
+    }else{
+      clicks57 = 0;
+      document.getElementById("counter57").innerHTML = clicks57;
+    }
+}
+</script>
+
+<script>
+    var clicks58 = 0;
+    function plus58() {
+
+        clicks58 += 1;
+        document.getElementById("counter58").innerHTML = clicks58;
+    }
+</script>
+
+<script>
+  var clicks58;
+  function minus58() {
+
+    if (clicks58 > 0) {
+      clicks58 -= 1;
+      document.getElementById("counter58").innerHTML = clicks58;
+    }else{
+      clicks58 = 0;
+      document.getElementById("counter58").innerHTML = clicks58;
+    }
+}
+</script>
+
+<script>
+    var clicks59 = 0;
+    function plus59() {
+
+        clicks59 += 1;
+        document.getElementById("counter59").innerHTML = clicks59;
+    }
+</script>
+
+<script>
+  var clicks59;
+  function minus59() {
+
+    if (clicks59 > 0) {
+      clicks59 -= 1;
+      document.getElementById("counter59").innerHTML = clicks59;
+    }else{
+      clicks59 = 0;
+      document.getElementById("counter59").innerHTML = clicks59;
+    }
+}
+</script>
+
+<script>
+    var clicks60 = 0;
+    function plus60() {
+
+        clicks60 += 1;
+        document.getElementById("counter60").innerHTML = clicks60;
+    }
+</script>
+
+<script>
+  var clicks60;
+  function minus60() {
+
+    if (clicks60 > 0) {
+      clicks60 -= 1;
+      document.getElementById("counter60").innerHTML = clicks60;
+    }else{
+      clicks60 = 0;
+      document.getElementById("counter60").innerHTML = clicks60;
+    }
+}
+</script>
+
+<script>
+    var clicks61 = 0;
+    function plus61() {
+
+        clicks61 += 1;
+        document.getElementById("counter61").innerHTML = clicks61;
+    }
+</script>
+
+<script>
+  var clicks61;
+  function minus61() {
+
+    if (clicks61 > 0) {
+      clicks61 -= 1;
+      document.getElementById("counter61").innerHTML = clicks61;
+    }else{
+      clicks61 = 0;
+      document.getElementById("counter61").innerHTML = clicks61;
+    }
+}
+</script>
+
+<script>
+    var clicks62 = 0;
+    function plus62() {
+
+        clicks62 += 1;
+        document.getElementById("counter62").innerHTML = clicks62;
+    }
+</script>
+
+<script>
+  var clicks62;
+  function minus62() {
+
+    if (clicks62 > 0) {
+      clicks62 -= 1;
+      document.getElementById("counter62").innerHTML = clicks62;
+    }else{
+      clicks62 = 0;
+      document.getElementById("counter62").innerHTML = clicks62;
+    }
+}
+</script>
+
+<script>
+    var clicks63 = 0;
+    function plus63() {
+
+        clicks63 += 1;
+        document.getElementById("counter63").innerHTML = clicks63;
+    }
+</script>
+
+<script>
+  var clicks63;
+  function minus63() {
+
+    if (clicks63 > 0) {
+      clicks63 -= 1;
+      document.getElementById("counter63").innerHTML = clicks63;
+    }else{
+      clicks63 = 0;
+      document.getElementById("counter63").innerHTML = clicks63;
+    }
+}
+</script>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body noPad">
+        <div class='form' id='form'>
+            <form action="form/integration.php" method="post">
+            <input type="hidden" name="tema" value="STREETSET НАДЕЖНЫЙ МУЛЬТИТУЛ"/>
+            <input type="hidden" name="price" value="8.490"/>
+            <input type="hidden" name="comments" value="http://kz-luxury.com/streetset.html"/>
+            <p>Ваше Имя</p>
+            <input class='purchaseFormInput' type="text" placeholder="Имя" name='name'>
+            <p>Ваш Телефон</p>
+            <input class='purchaseFormInput' type="text" placeholder="+7 (7XX) XXX XX XX" name='phone' id='phone'>
+            <p>Для совершения заказа необходимо 
+            ввести только номер телефона</p>
+            <div class='buttonWrap'>
+              <button type='submit' class='purchaseFormButton'>Заказать</button>
+            </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128196736-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128196736-1');
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script>
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter50910083 = new Ya.Metrika2({
+                    id:50910083,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/50910083" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+  </body>
+</html>
